@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" style="border:2px solid red;margin:auto;width: 30%;background-color: bisque;">
+      <fieldset style="border-radius: 15px;">
+        <legend>Code</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset style="border-radius: 15px;">
+        <legend>Name</legend>
+        <input type="text">
+      </fieldset>
+      <fieldset style="border-radius: 15px;">
+        <legend>Price</legend>
+        <input type="text" value="">
+      </fieldset>
+      <div><Button>Add</Button><Button>Cancel</Button></div>
+    </form>
+    number 1 <input type="text" id="num1"><br>
+    choie <input type="text" id="choice"><br>
+    number 2<input type="text" id="num2"><br>
+    <button onclick="add()">Calculate</button>
+    result <input type="text" id="result"><br>
+    <script>
+        function add(){
+            num1  = document.getElementById('num1').value
+            num2= document.getElementById('num2').value
+            result  = parseFloat(num1) + parseFloat(num2)
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>
